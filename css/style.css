@@ -1,0 +1,237 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+}
+
+#main_header {
+    height: 80px;
+}
+
+#main_header .container {
+    position: relative;
+    height: 80px;
+}
+
+#main_header .conatiner > h1 {
+    position: absolute;
+    left: 20px;
+}
+
+#main_header .container > h1 > a > img {
+    width: 80px;
+    height: 50px;
+    /* outline: 1px solid black; */
+    margin-top: 10px;
+}
+
+#gnb {
+    position: absolute;
+    line-height: 80px;
+    top: 0; right: 0;
+    /* outline: 1px solid black; */
+    z-index: 999;
+    
+}
+/* 1단계 메뉴 */
+#gnb > ul.depth1 > li {
+    float: left;
+    width: 110px;
+    text-align: center;
+    background: #fff;
+    /* outline: 1px solid red; */
+    margin-left: 1px;
+    
+}
+
+#gnb > ul.depth1 > li:last-child {
+    margin-right: 0;
+}
+
+/* 2단계 메뉴 */
+#gnb ul.depth2 {
+    /* outline: 1px solid rgba(0,0,0,0.5); */
+    padding: 20px 10px;
+    display: none;
+}
+#gnb ul.depth2 > li {
+    line-height: 2em;
+    font-size: 14px; 
+}
+
+#gnb ul.depth1 > li > a:hover {
+   border-bottom: 5px solid #2e96f2;
+   color: #2e96f2;
+}
+#gnb ul.depth2 > li > a:hover {
+    color: #2e96f2;
+}
+
+#main_visual {
+    position: relative;
+    width: 100%; height: 620px;
+    /* outline: 2px solid red; */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  #main_visual .swiper-container {
+    width: 1920px; height: 620px;
+    /* border: 2px solid green; */
+    position: absolute;
+    left: calc(50% - (1920px / 2));
+  }
+  
+  /* 화살표 위치 조정 */
+  .container1400 {
+    width: 1400px;
+    position: relative;
+    margin: 0 auto;
+    /* outline: 2px solid red!important; */
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    transform: translateY(-300px);
+    color: white;
+  }
+  
+  /* 컬러 변경 */
+  .swiper-pagination-bullet {
+  
+  }
+  .swiper-pagination-bullet-active {
+    background: white;
+  }
+
+  #vision {
+      padding-top: 100px;
+      padding-bottom: 100px;
+  }
+  #vision .container .col_5 {    
+    padding-top:40px;
+  }
+
+  #vision h2 {
+      font-weight: normal;
+      font-size: 40px;
+      margin-bottom: 25px;
+  }
+
+  #vision h2 > img {
+      width: 120px;
+  }
+
+  #vision h2 span {
+      font-weight: bold;
+  }
+
+  #vision p {
+      font-size: 14px;
+  }
+
+  .btn-detail {
+      width: 180px; height: 48px;
+      border: 2px solid #2e96f2;
+      display: block;
+      text-align: center;
+      line-height: 48px;
+      margin-top: 60px; 
+      font-size: 14px;
+      color: #2e96f2; 
+  }
+
+  .btn-detail:hover {
+      background:#2e96f2;
+      color: white;
+  }
+
+  #vision .container .col_5 {
+      /* outline: 1px solid black; */
+      margin-top: 50px;
+      text-align: center;
+  }
+
+  #vision .btn-detail {
+      display: inline-block;
+  }
+
+  #research {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      text-align: center;
+      background: #f8f8f8;
+  }
+
+  .img_responsive {
+      width: 100%;
+  }
+  #research h2,
+  #product h2 {
+      font-size: 32px;
+      margin-bottom: 50px;
+  }
+
+
+  #product {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      text-align: center;
+      background: #ccc;
+      color: #fff;
+      background: url(../images/제품소개bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+  }
+  #product > h2,
+  #product > p {   
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+  }
+
+  #product .btn-detail {
+      display: inline-block;
+      border: 2px solid #fff;
+      color: #fff;
+  }
+  
+  #product .btn-detail:hover {
+    background: none;
+    color: #fff;
+}
+
+
+  #main_footer {
+      background: #f8f8f8;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      font-size: 0.8em;
+  }
+
+  address {
+      font-style: normal;
+  }
+
+  #main_footer address,
+  #main_footer .info {
+      margin-bottom: 10px;
+  }
+
+
+  
